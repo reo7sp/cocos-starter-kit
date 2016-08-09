@@ -1,0 +1,16 @@
+<%
+    files.splice(files.indexOf('loading.js'), 1);
+
+    var filesArrayAsStr;
+
+    filesArrayAsStr = _(files).map(function (it) {
+      return '"res/' + it + '"';
+    });
+
+    filesArrayAsStr = filesArrayAsStr.join(',');
+
+    filesArrayAsStr = '[' + filesArrayAsStr + ']';
+%>
+
+<%- "# Auto generated. Don't edit" %>
+module.exports = <%- filesArrayAsStr %>
