@@ -1,6 +1,20 @@
 {
   "name": "cocos-starter-kit",
-  "version": "0.3.0",
+  "version": "0.0.0",
+  "description": "Boilerplate for cocos2d-x games",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reo7sp/cocos-starter-kit.git"
+  },
+  "author": "Oleg Morozenkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reo7sp/cocos-starter-kit/issues"
+  },
+  "homepage": "https://github.com/reo7sp/cocos-starter-kit#readme",
   "devDependencies": {
     "browserify": "^13.0.1",
     "browserify-incremental": "^3.1.1",
