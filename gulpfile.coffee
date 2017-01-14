@@ -190,7 +190,7 @@ gulp.task 'test', ->
 
 
 # --- run tasks --- #
-gulp.task 'clean', -> del ['dist']
+gulp.task 'clean', -> del ['src/__generated__']
 
 for platform in platforms
   gulp.task "start:#{platform}", $.shell.task("cocos run -p #{platform}")
