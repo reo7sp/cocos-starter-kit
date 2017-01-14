@@ -1,3 +1,9 @@
+require('coffeescript-accessors').bootstrap()
+require('coffeescript-mixins-lodash').bootstrap()
+
+require('./globals.coffee')
+
 # for main.js
-window.g_resources = require('./resources.coffee')
-window.MainMenuScene = require('./scenes/MainMenuScene.coffee')
+window.document ?= {}
+window.MainScene = require('./__generated__/main-scene.coffee')
+window.g_resources = require('./__generated__/resources.coffee')

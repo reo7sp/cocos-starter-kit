@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>cocos2d error</title>
+
+        <style>
+            body {
+                background-color: #222;
+                font-family: sans-serif;
+            }
+            pre {
+                color: #eee;
+                font-size: 1.1em;
+            }
+            h1 {
+                color: #c00;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>&gt;&gt;&gt; Build error</h1>
+        <pre><%= contents %></pre>
+
+        <script src="res/webhelper.js"></script>
+        <script>
+            webhelper.ask(function (buildIsOk) {
+                if (buildIsOk) {
+                    webhelper.redirectToGame();
+                }
+            });
+        </script>
+    </body>
+</html>

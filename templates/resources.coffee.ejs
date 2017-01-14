@@ -1,15 +1,13 @@
 <%
-    files.splice(files.indexOf('loading.js'), 1);
+var filesArrayAsStr = _(files).filter(function (it) {
+    return fs.lstatSync(it).isFile()
+}).reject(function (it) {
+    return it.includes('/.') || it.endsWith('.js');
+}).map(function (it) {
+    return '"' + it + '"';
+}).join(',');
 
-    var filesArrayAsStr;
-
-    filesArrayAsStr = _(files).map(function (it) {
-      return '"res/' + it + '"';
-    });
-
-    filesArrayAsStr = filesArrayAsStr.join(',');
-
-    filesArrayAsStr = '[' + filesArrayAsStr + ']';
+filesArrayAsStr = '[' + filesArrayAsStr + ']';
 %>
 
 <%- "# Auto generated. Don't edit" %>
