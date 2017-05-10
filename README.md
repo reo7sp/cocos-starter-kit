@@ -1,5 +1,10 @@
 # cocos-starter-kit
-Boilerplate for cocos2d-x games
+Boilerplate for cocos2d-x games.
+
+Includes:
+- [CoffeeScript](http://coffeescript.org) with [Browserify](http://browserify.org)
+- MVC microframework [Kaniku](https://github.com/reo7sp/kaniku)
+- [Lodash](https://lodash.com), [TWGL](http://twgljs.org) with [extensions](https://github.com/reo7sp/twgl_cc), [coffeescript-accessors](https://github.com/reo7sp/coffeescript-accessors), [coffeescript-mixins](https://github.com/reo7sp/coffeescript-mixins-lodash)
 
 ## Usage
 ```sh
